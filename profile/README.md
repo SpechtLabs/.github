@@ -1,7 +1,5 @@
 # SpechtLabs
 
-![SpechtLabs Logo](specht-labs.png)
-
 ## About Us
 
 SpechtLabs is dedicated to building robust, scalable, and high-performance software. With expertise in both development and operations, we focus on creating tools and infrastructure that power distributed systems, automation, and developer productivity.
