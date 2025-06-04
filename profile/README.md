@@ -10,14 +10,6 @@ SpechtLabs is dedicated to building robust, scalable, and high-performance softw
 🔹 **Distributed Systems** – Scalable infrastructure and resilient architectures.
 🔹 **Automation & DevOps** – Streamlining workflows and improving efficiency.
 🔹 **Networking & Observability** – Optimizing data flow and monitoring solutions.
-<!-- 
-## Projects
-
-Check out some of our key repositories:
-
-- [**Project Name**](https://github.com/SpechtLabs/project-name) – Short description.
-- [**Project Name**](https://github.com/SpechtLabs/project-name) – Short description.
-- [**Project Name**](https://github.com/SpechtLabs/project-name) – Short description. -->
 
 ## Get Involved
 
@@ -29,3 +21,7 @@ We welcome contributions from the community! Feel free to:
 
 ---
 🚀 *Building the future of scalable and reliable systems, one commit at a time.*
+
+## Projects
+
+Check out some of our key repositories below
