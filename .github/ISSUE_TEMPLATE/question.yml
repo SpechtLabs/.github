@@ -1,0 +1,11 @@
+name: Question or feedback
+description: Anything that isn't a bug, a feature request or a docs problem.
+labels:
+  - question
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question or feedback
+    validations:
+      required: true

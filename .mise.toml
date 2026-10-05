@@ -1,0 +1,49 @@
+# .mise.toml — local tooling, exact pins (repo convention)
+#
+# The tasks below lint this repository's Markdown, issue forms and workflow;
+# CI uses these tasks. Renovate keeps every pin in this file current.
+
+[settings]
+# The pins below are the only source of tool versions.
+idiomatic_version_file_enable_tools = []
+
+[tools]
+# markdownlint-cli2 installs from npm, so it needs Node.
+node = "24.21.0"
+markdownlint-cli2 = "0.23.3"
+yamllint = "1.38.0"
+actionlint = "1.7.12"
+# actionlint runs shellcheck on every `run:` script when it's on PATH, and
+# silently skips them when it isn't.
+shellcheck = "0.11.0"
+
+# Pins GitHub Actions to commit SHAs (see the update-gha task)
+pinact = "5.0.0"
+
+[tasks.md-lint]
+description = "Lint every Markdown file"
+run = "markdownlint-cli2"
+
+[tasks.md-fmt]
+description = "Fix what markdownlint can fix"
+run = "markdownlint-cli2 --fix"
+
+[tasks.yaml-lint]
+description = "Lint every YAML file in the repository"
+run = "yamllint --strict ."
+
+[tasks.actionlint]
+description = "Lint the GitHub Actions workflows"
+run = "actionlint"
+
+[tasks.lint]
+description = "Lint Markdown, YAML and workflows"
+depends = ["md-lint", "yaml-lint", "actionlint"]
+
+[tasks.check]
+description = "The definition of done: every gate CI runs"
+depends = ["lint"]
+
+[tasks.update-gha]
+description = "Pin GitHub Actions to commit SHAs (Renovate keeps them current afterwards)"
+run = "pinact run"
