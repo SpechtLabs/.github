@@ -1,0 +1,21 @@
+name: Documentation
+description: Something in the documentation is wrong, missing or hard to follow.
+labels:
+  - documentation
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Page
+      description: A link to the page or file, if there is one.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What's wrong or missing
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested change
+      description: What it should say instead, if you know.

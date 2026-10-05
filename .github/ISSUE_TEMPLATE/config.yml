@@ -1,0 +1,8 @@
+# GitHub reads the template chooser's settings from config.yml (not
+# config.yaml), and accepts only these keys; the templates themselves are the
+# other files in this directory.
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security vulnerability
+    url: https://github.com/SpechtLabs/.github/blob/main/SECURITY.md
+    about: Please report security problems privately, as SECURITY.md describes, not in a public issue.
