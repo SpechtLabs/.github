@@ -9,7 +9,7 @@ idiomatic_version_file_enable_tools = []
 
 [tools]
 # markdownlint-cli2 installs from npm, so it needs Node.
-node = "24.21.0"
+node = "24.22.0"
 markdownlint-cli2 = "0.23.3"
 yamllint = "1.38.0"
 actionlint = "1.7.12"
